@@ -15,7 +15,7 @@ chrome_options.add_argument("--disable-dev-shm-usage")  # Overcome limited resou
 
 #initialising web driver 
 #chrome_driver = webdriver.Chrome()
-chrome_driver = webdriver.Chrome(service=service, options=chrome_options)
+chrome_driver = webdriver.Chrome(service=Service, options=chrome_options)
 #opening a web url 
 
 # chrome_driver.get("https://portal.adhocnet.org/")
