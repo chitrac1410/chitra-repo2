@@ -38,7 +38,7 @@ chrome_driver.find_element(By.CSS_SELECTOR,"input[class='btn btn-success']").cli
 # find the message data 
 message = chrome_driver.find_element(By.CLASS_NAME,"alert-success").text
 
-time.sleep(4)
+time.sleep(14)
 
 
 # printnt message
