@@ -3,6 +3,7 @@ import time
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
 # we are only import webdriver from entire selenium 
 #loading particular browser of a driver
 # Setting up headless mode
@@ -13,8 +14,8 @@ chrome_options.add_argument("--no-sandbox")  # Required for running as root in D
 chrome_options.add_argument("--disable-dev-shm-usage")  # Overcome limited resource problems
 
 #initialising web driver 
-chrome_driver = webdriver.Chrome()
-
+#chrome_driver = webdriver.Chrome()
+chrome_driver = webdriver.Chrome(service=service, options=chrome_options)
 #opening a web url 
 
 # chrome_driver.get("https://portal.adhocnet.org/")
